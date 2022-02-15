@@ -243,7 +243,7 @@ function Home() {
               }}
             >
               {" "}
-              {claimingNft ? "Confirm Transaction in Wallet" : "Mint Mint MintMint Mint MintMint"}{" "}
+              {claimingNft ? "Confirm Transaction in Wallet" : "Mint"}{" "}
               {mintDone ? feedback : ""}{" "}
             </s.connectButton>{" "}
           </s.Container>
