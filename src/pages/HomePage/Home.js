@@ -48,8 +48,9 @@ function Home() {
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}`);
+   
     setClaimingNft(true);
+    setFeedback(`Confirm Your Transaction In Wallet!!!`);
     blockchain.smartContract.methods
       .mint(mintAmount)
       .send({
@@ -66,9 +67,9 @@ function Home() {
       .then((receipt) => {
         setMintDone(true);
         setFeedback(
-          `Done, the ${CONFIG.NFT_NAME} is yours!`
+          `Done, the ${CONFIG.NFT_NAME} NFT is yours!`
         );
-        setClaimingNft(false);
+        // setClaimingNft(false);
         blockchain.smartContract.methods.totalSupply().call().then(res => {
           setTotalSupply(res);
         });
@@ -83,7 +84,7 @@ function Home() {
       newMintAmount = 1;
     }
     setMintAmount(newMintAmount);
-    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * newMintAmount).toFixed(3));
+    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * newMintAmount).toFixed(2));
   };
 
   const incrementMintAmount = () => {
@@ -92,12 +93,12 @@ function Home() {
       newMintAmount = 10;
     }
     setMintAmount(newMintAmount);
-    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * newMintAmount).toFixed(3));
+    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * newMintAmount).toFixed(2));
   };
 
   const maxNfts = () => {
     setMintAmount(10);
-    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * 10).toFixed(3));
+    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * 10).toFixed(2));
   };
 
   const getData = async () => {
@@ -243,9 +244,10 @@ function Home() {
               }}
             >
               {" "}
-              {claimingNft ? "Confirm Transaction in Wallet" : "Mint"}{" "}
-              {mintDone ? feedback : ""}{" "}
+              {claimingNft ? feedback : "Mint"}{" "}
+             
             </s.connectButton>{" "}
+           
           </s.Container>
           ) : (
             <s.connectButton
@@ -272,7 +274,7 @@ function Home() {
                         cursor:"pointer",
                       }}
                     >
-                       {feedback}
+                       {blockchain.errorMsg}
                     </s.connectButton>
           ) : ("")}
 
