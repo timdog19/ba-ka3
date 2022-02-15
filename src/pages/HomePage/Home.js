@@ -192,7 +192,7 @@ function Home() {
                 -
               </StyledRoundButton>
               <s.SpacerMedium />
-              <s.TextDescription color={"#dbac36"} size={"1.8rem"}>
+              <s.TextDescription  size={"1.8rem"}>
                 {mintAmount}
               </s.TextDescription>
               <s.SpacerMedium />
@@ -218,7 +218,7 @@ function Home() {
             </s.maxButton>
           </s.FlexContainer>
           
-          <s.TextSubTitle style={{marginTop:"10px"}} size={0.9} color={"#dbac36"} align={"right"} >
+          <s.TextSubTitle style={{marginTop:"10px"}} size={0.9}  align={"right"} >
             Max 10
           </s.TextSubTitle>
           <s.SpacerSmall />
@@ -226,7 +226,7 @@ function Home() {
           <s.SpacerLarge />
           <s.FlexContainer fd={"row"} ai={"center"} jc={"space-between"}>
             <s.TextTitle>Total</s.TextTitle>
-            <s.TextTitle color={"#dbac36"}>{displayCost}</s.TextTitle>
+            <s.TextTitle>{displayCost}</s.TextTitle>
           </s.FlexContainer>
           <s.SpacerSmall />
           <s.Line />
@@ -251,7 +251,7 @@ function Home() {
             <s.connectButton
                       style={{
                         textAlign: "center",
-                        color: "#dbac36",
+                        color: "var(--web-theme)",
                         cursor:"pointer",
                       }}
                       onClick={(e) => {
@@ -268,7 +268,7 @@ function Home() {
             <s.connectButton
                       style={{
                         textAlign: "center",
-                        color: "#dbac36",
+                        color: "var(--web-theme)",
                         cursor:"pointer",
                       }}
                     >
