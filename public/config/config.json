@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x26f3d33F06DAB4a76Bc32f349CCd3429614837c0",
+  "CONTRACT_ADDRESS": "0xf169fdC02b9A4009a8307497E5FCe2999024E0C7",
   "SCAN_LINK": "https://etherscan.io/address/0x35043d11D31346D005b848E3cd7998707FF7EE27",
   "NETWORK": {
-    "NAME": "Rinkbey Ethereum",
+    "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "Atlantic Voyage Ape Club",
   "SYMBOL": "AVAC",
