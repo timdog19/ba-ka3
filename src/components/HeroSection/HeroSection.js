@@ -11,7 +11,7 @@ function HeroSection() {
         <>
            <HeroContainer>
                 <HeroContent>
-                <ImageBg wid={80} src={"config/images/joking_jungle_cats.png"} />
+                <ImageBg wid={80} src={""} />
                     {/* <HeroP>early supporters can mint upto 5 jungle cats nfts at a discounted price of 0.04 eth.
 learn how to get access in <span style={{color:"#dbac36"}}>our discord</span> </HeroP> */}
                 </HeroContent>
