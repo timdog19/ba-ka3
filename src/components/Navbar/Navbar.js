@@ -117,17 +117,17 @@ const Navbar = () => {
               
                
                 <NavItems style={{paddingLeft:"20px"}}>
-                  <NavLink onClick={()=>socialMedia(" https://www.instagram.com/AtlanticVoyageApeClub")}>
+                  <NavLink onClick={()=>socialMedia(" https://www.instagram.com/")}>
                     <NavIcon src={"config/images/instagram.png"}></NavIcon>
                   </NavLink>
                 </NavItems>
                 <NavItems style={{paddingLeft:"0px"}}>
-                  <NavLink onClick={()=> socialMedia(" https://discord.gg/AtlanticVoyageApeClub")}>
+                  <NavLink onClick={()=> socialMedia(" https://discord.gg/")}>
                     <NavIcon src={"config/images/discord.png"}></NavIcon>
                   </NavLink>
                 </NavItems>
                 <NavItems style={{paddingLeft:"0px"}}>
-                  <NavLink onClick={()=>socialMedia("https://twitter.com/AtlanticApes")}>
+                  <NavLink onClick={()=>socialMedia("https://twitter.com/")}>
                     <NavIcon src={"config/images/twitter.png"}></NavIcon>
                   </NavLink>
 
