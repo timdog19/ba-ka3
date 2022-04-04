@@ -1,16 +1,16 @@
 {
-  "CONTRACT_ADDRESS": "0x56546DAF99C69c0F6271FA287b30A1946cA466f0",
-  "SCAN_LINK": "https://etherscan.io/address/0x56546DAF99C69c0F6271FA287b30A1946cA466f0",
+  "CONTRACT_ADDRESS": "0xD6754eBCCA004C48E09Fc130Ded72A8DCcfc165d",
+  "SCAN_LINK": "https://polygonscan.com/address/0xD6754eBCCA004C48E09Fc130Ded72A8DCcfc165d",
   "NETWORK": {
-    "NAME": "Ethereum",
-    "SYMBOL": "ETH",
-    "ID": 4
+    "NAME": "Polygon",
+    "SYMBOL": "MATIC",
+    "ID": 137
   },
   "NFT_NAME": "Cosmoboy",
   "SYMBOL": "CMB",
   "MAX_SUPPLY": 1000,
-  "WEI_COST": 30000000000000000,
-  "DISPLAY_COST": 0.03,
+  "WEI_COST": 60000000000000000000,
+  "DISPLAY_COST": 60.00,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/Cosmoboy",
